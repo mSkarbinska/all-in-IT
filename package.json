@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "mongodb": "^4.8.1",
@@ -17,6 +18,8 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
     "typescript": "4.6.3"
   }
 }
