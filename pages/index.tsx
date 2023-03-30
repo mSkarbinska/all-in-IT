@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import clientPromise from '../lib/mongodb'
 import { InferGetServerSidePropsType } from 'next'
+import { AppContext } from 'next/app'
 
-export async function getServerSideProps(context) {
+
+export async function getServerSideProps(context: AppContext) {
   try {
     await clientPromise
     // `await clientPromise` will use the default database passed in the MONGODB_URI
@@ -41,7 +43,7 @@ export default function Home({
         </h1>
 
         {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
+          <h2 className="text-emerald-500 text-xl h-10">You are connected to MongoDB</h2>
         ) : (
           <h2 className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
