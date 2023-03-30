@@ -41,7 +41,7 @@ export default function Home({
         </h1>
 
         {isConnected ? (
-          <h2 className="subtitle" class="text-emerald-500 text-xl h-10">You are connected to MongoDB</h2>
+          <h2 className="text-emerald-500 text-xl h-10">You are connected to MongoDB</h2>
         ) : (
           <h2 className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
